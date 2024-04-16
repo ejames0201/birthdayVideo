@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<title>Claire Riccobono</title>
+<link rel="stylesheet" th:href="@{/main.css}" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+	crossorigin="anonymous"></script>
+<style>
+/* Custom CSS for image resizing */
+.small-image {
+	max-width: 1000px; /* Adjust the maximum width as needed */
+	max-height: 500px; /* Adjust the maximum height as needed */
+}
+
+/* Additional style for centering text */
+.center {
+	text-align: center;
+	margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Style for the main description */
+.main-description {
+	font-size: 20px;
+	margin-top: 10px; /* Add margin for spacing */
+}
+</style>
+</head>
+<body>
+	<div th:replace="general.html :: header"></div>
+	<div th:replace="general.html :: signedInNavBar"></div>
+	<main class="page-container">
+		<div>
+			<h2 class="center">Welcome to Your Birthday Website</h2>
+			<div class="center">
+				<h2>Hope 26 is the best year yet!</h2>
+			</div>
+			<div class="center mt-3">
+				<iframe src="https://drive.google.com/file/d/1ljBxIrg10Pqz1Yyttxf5dgoBavJQIQem/preview" width="640" height="480" allow="autoplay"></iframe>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
